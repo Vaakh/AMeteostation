@@ -1,0 +1,16 @@
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.csprojAssemblyReference.cache
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.csproj.CoreCompileInputs.cache
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.AssemblyInfoInputs.cache
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.AssemblyInfo.cs
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Resources\EDSDK.dll
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Resources\EdsImage.dll
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Meteostation.deps.json
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Meteostation.runtimeconfig.json
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Meteostation.runtimeconfig.dev.json
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Meteostation.dll
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\Meteostation.pdb
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\EDSDK.NET.dll
+C:\Users\Женя\source\repos\Meteostation\Meteostation\bin\Debug\netcoreapp2.1\EDSDK.NET.pdb
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.csproj.CopyComplete
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.dll
+C:\Users\Женя\source\repos\Meteostation\Meteostation\obj\Debug\netcoreapp2.1\Meteostation.pdb
