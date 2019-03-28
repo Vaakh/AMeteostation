@@ -207,41 +207,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "System.Drawing.Common/4.5.0-preview1-25914-04": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Drawing.Common.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Drawing.Common.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "EDSDK.NET/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Drawing.Common": "4.5.0-preview1-25914-04"
-        },
-        "compile": {
-          "bin/placeholder/EDSDK.NET.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/EDSDK.NET.dll": {}
-        }
       }
     }
   },
@@ -555,7 +520,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "aSTPL94NloSiQVL5Len8wbjFKOnoAX/vOh3s3DF6g3c7GUUMLCDvnBhmA72M2iN2AedyA8hpr7m89kzSAKUnJQ==",
+      "sha512": "GmkKfoyerqmsHMn7OZj0AKpcBabD+GaafqphvX2Mw406IwiJRy1pKcKqdCfKJfYmkRyJ6+e+RaUylgdJoDa1jQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
@@ -715,77 +680,39 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "System.Drawing.Common/4.5.0-preview1-25914-04": {
-      "sha512": "2jJby4+hzxON5gSOaDaOJZ2J6lIPBJqbWn37souvi+uDtknGFYRi//mUSPbW0Hp5HW2YMMFE6iRHTgc4YPOmuw==",
-      "type": "package",
-      "path": "system.drawing.common/4.5.0-preview1-25914-04",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Drawing.Common.dll",
-        "lib/netstandard2.0/System.Drawing.Common.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.Drawing.Common.dll",
-        "ref/netstandard2.0/System.Drawing.Common.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "system.drawing.common.4.5.0-preview1-25914-04.nupkg.sha512",
-        "system.drawing.common.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "EDSDK.NET/1.0.0": {
-      "type": "project",
-      "path": "F:\\Программирование\\Библиотеки\\DLL\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj",
-      "msbuildProject": "F:\\Программирование\\Библиотеки\\DLL\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "EDSDK.NET >= 1.0.0",
+      "F:\\Программирование\\Библиотеки\\DLL\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Женя\\.nuget\\packages\\": {},
+    "C:\\Users\\Артём\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Женя\\source\\repos\\Meteostation\\Meteostation\\Meteostation.csproj",
+      "projectUniqueName": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Meteostation\\Meteostation.csproj",
       "projectName": "Meteostation",
-      "projectPath": "C:\\Users\\Женя\\source\\repos\\Meteostation\\Meteostation\\Meteostation.csproj",
-      "packagesPath": "C:\\Users\\Женя\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Женя\\source\\repos\\Meteostation\\Meteostation\\obj\\",
+      "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Meteostation\\Meteostation.csproj",
+      "packagesPath": "C:\\Users\\Артём\\.nuget\\packages\\",
+      "outputPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Meteostation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Женя\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Артём\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -819,5 +746,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Не удалось найти проект \"F:\\Программирование\\Библиотеки\\DLL\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj\". Убедитесь, что ссылка на проект действительна и файл проекта существует.",
+      "libraryId": "F:\\Программирование\\Библиотеки\\DLL\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
