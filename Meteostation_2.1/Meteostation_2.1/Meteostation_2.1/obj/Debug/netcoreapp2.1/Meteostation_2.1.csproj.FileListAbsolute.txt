@@ -1,0 +1,14 @@
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.AssemblyInfoInputs.cache
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.AssemblyInfo.cs
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\Meteostation_2.1.deps.json
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\Meteostation_2.1.runtimeconfig.json
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\Meteostation_2.1.runtimeconfig.dev.json
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\Meteostation_2.1.dll
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\Meteostation_2.1.pdb
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\bin\Debug\netcoreapp2.1\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.csproj.CopyComplete
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.dll
+D:\Repos\GitHub\AMeteostation\Meteostation_2.1\Meteostation_2.1\Meteostation_2.1\obj\Debug\netcoreapp2.1\Meteostation_2.1.pdb

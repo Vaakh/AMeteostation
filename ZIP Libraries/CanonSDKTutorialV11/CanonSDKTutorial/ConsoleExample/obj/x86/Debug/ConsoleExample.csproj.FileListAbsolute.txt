@@ -1,9 +1,0 @@
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\bin\Debug\ConsoleExample.exe
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\bin\Debug\ConsoleExample.pdb
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\bin\Debug\EDSDKLib.dll
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\bin\Debug\EDSDKLib.pdb
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\obj\x86\Debug\ConsoleExample.csprojAssemblyReference.cache
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\obj\x86\Debug\ConsoleExample.csproj.CoreCompileInputs.cache
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\obj\x86\Debug\ConsoleExample.csproj.CopyComplete
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\obj\x86\Debug\ConsoleExample.exe
-D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\ConsoleExample\obj\x86\Debug\ConsoleExample.pdb

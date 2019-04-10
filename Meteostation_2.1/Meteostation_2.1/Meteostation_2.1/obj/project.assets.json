@@ -208,39 +208,13 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "System.Drawing.Common/4.5.0-preview1-25914-04": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Drawing.Common.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Drawing.Common.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "EDSDK.NET/1.0.0": {
+      "EDSDKLib/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Drawing.Common": "4.5.0-preview1-25914-04"
-        },
         "compile": {
-          "bin/placeholder/EDSDK.NET.dll": {}
+          "bin/placeholder/EDSDKLib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EDSDK.NET.dll": {}
+          "bin/placeholder/EDSDKLib.dll": {}
         }
       }
     }
@@ -716,48 +690,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "System.Drawing.Common/4.5.0-preview1-25914-04": {
-      "sha512": "xe9fRaplCuFFkqa2FNSuhZrux4ENP6b1sKxcGIqI0en4aEDMHsHQxtIwwkMsvlKDHoFlLcPkvpUefUnttajA8w==",
-      "type": "package",
-      "path": "system.drawing.common/4.5.0-preview1-25914-04",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Drawing.Common.dll",
-        "lib/netstandard2.0/System.Drawing.Common.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.Drawing.Common.dll",
-        "ref/netstandard2.0/System.Drawing.Common.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "system.drawing.common.4.5.0-preview1-25914-04.nupkg.sha512",
-        "system.drawing.common.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "EDSDK.NET/1.0.0": {
+    "EDSDKLib/1.0.0": {
       "type": "project",
-      "path": "Resources/EDSDK.NET-master/EDSDK.NET/EDSDK.NET.csproj",
-      "msbuildProject": "Resources/EDSDK.NET-master/EDSDK.NET/EDSDK.NET.csproj"
+      "path": "../EDSDKLib/EDSDKLib.csproj",
+      "msbuildProject": "../EDSDKLib/EDSDKLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "EDSDK.NET >= 1.0.0",
+      "EDSDKLib >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -791,8 +732,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Repos\\GitHub\\AMeteostation\\Meteostation_2.1\\Meteostation_2.1\\Meteostation_2.1\\Resources\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj": {
-              "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation_2.1\\Meteostation_2.1\\Meteostation_2.1\\Resources\\EDSDK.NET-master\\EDSDK.NET\\EDSDK.NET.csproj"
+            "D:\\Repos\\GitHub\\AMeteostation\\Meteostation_2.1\\Meteostation_2.1\\EDSDKLib\\EDSDKLib.csproj": {
+              "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation_2.1\\Meteostation_2.1\\EDSDKLib\\EDSDKLib.csproj"
             }
           }
         }
