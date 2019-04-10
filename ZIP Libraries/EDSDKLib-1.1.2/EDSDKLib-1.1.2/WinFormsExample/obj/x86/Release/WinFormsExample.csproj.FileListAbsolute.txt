@@ -1,0 +1,12 @@
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\bin\Release\WinFormsExample.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\bin\Release\WinFormsExample.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\bin\Release\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\bin\Release\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\bin\Release\EDSDKLib.xml
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.MainForm.resources
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.csproj.GenerateResource.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.csproj.CopyComplete
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WinFormsExample\obj\x86\Release\WinFormsExample.pdb

@@ -1,0 +1,12 @@
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\bin\Debug\WinFormsUI.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\bin\Debug\WinFormsUI.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\bin\Debug\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\bin\Debug\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.MainForm.resources
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.Properties.Resources.resources
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.csproj.GenerateResource.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.csproj.CopyComplete
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\CanonSDKTutorialV11\CanonSDKTutorial\WinFormsUI\obj\x86\Debug\WinFormsUI.pdb

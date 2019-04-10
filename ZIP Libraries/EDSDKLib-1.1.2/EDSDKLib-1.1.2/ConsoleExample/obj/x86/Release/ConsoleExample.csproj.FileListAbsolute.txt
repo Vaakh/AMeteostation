@@ -1,0 +1,10 @@
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\bin\Release\ConsoleExample.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\bin\Release\ConsoleExample.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\bin\Release\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\bin\Release\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\bin\Release\EDSDKLib.xml
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\obj\x86\Release\ConsoleExample.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\obj\x86\Release\ConsoleExample.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\obj\x86\Release\ConsoleExample.csproj.CopyComplete
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\obj\x86\Release\ConsoleExample.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\ConsoleExample\obj\x86\Release\ConsoleExample.pdb
