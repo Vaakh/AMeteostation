@@ -1,0 +1,11 @@
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\bin\Debug\netcoreapp2.2\Sensors.deps.json
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\bin\Debug\netcoreapp2.2\Sensors.runtimeconfig.json
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\bin\Debug\netcoreapp2.2\Sensors.runtimeconfig.dev.json
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\bin\Debug\netcoreapp2.2\Sensors.dll
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\bin\Debug\netcoreapp2.2\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\bin\Debug\netcoreapp2.2\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\obj\Debug\netcoreapp2.2\Sensors.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\obj\Debug\netcoreapp2.2\Sensors.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\obj\Debug\netcoreapp2.2\Sensors.AssemblyInfoInputs.cache
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\obj\Debug\netcoreapp2.2\Sensors.AssemblyInfo.cs
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\Sensors\obj\Debug\netcoreapp2.2\Sensors.csproj.CopyComplete
