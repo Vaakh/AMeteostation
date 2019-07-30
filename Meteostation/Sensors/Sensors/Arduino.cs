@@ -3,7 +3,7 @@ using System.IO;
 using System.IO.Ports;
 using System.Text;
 using System.Timers;
-
+using CsvHelper;
 
 namespace Sensors
 {
@@ -41,7 +41,7 @@ namespace Sensors
             }
         }
 
-        public string ReadAllArData()
+        public string ReadArData()
         {
             try
             {
@@ -62,7 +62,7 @@ namespace Sensors
             }
         }
 
-        public void FindArPort()
+        public bool FindArPort() //actually, initialization
         {
             bool ArduinoPortFound = false;
             // this method contains recursion
@@ -84,64 +84,26 @@ namespace Sensors
                         ArduinoPortFound = false;
                     }
                 }
+                if (ArduinoPortFound == true) return true;
+                else return false;
             }
-            catch { Console.WriteLine("FindArPort failed!"); }
-            if (ArduinoPortFound == false) FindArPort();
+            catch { Console.WriteLine("FindArPort failed!"); return false; }
         }
 
-        public bool ProcessAllData()
-        {
-            string data;
-
-            data = ReadAllArData();
-            if (data.Contains("Connection failed!"))
-            {
-                return false;
-            }
-            if (data.Contains("Data from Arduino"))
-            {
-                Console.WriteLine(data);
-                return true;
-            }
-            data = "Wrong data";
-            return false;
-        }
-
-        public bool Initialize()
-        {
-            return true;
-        }
     }
 
-    class ArduinoExecutor
+    class ArduinoData
     {
+        public string[] RTC = new string[2]; //(RealTime Clock) first element date, second - time
+        public int[] MFS = new int[3]; //(Magnit Field Sensor) standart sequence: x, y, z
+        public int[] THI = new int[2]; //(TempIns/HumIns) first temp, second - hum
+        public int[] THO = new int[2]; //(TempOut/HumOut) first temp, second - hum
+        public int[] TPO = new int[2]; //(TempOut/PressOut) first temp, second - press
+        public int[] Wnd = new int[2]; //(WindSpeed/WindOrintation) first speed, second - orientation
+        public int LLS; //(LightLevel Sensor)
+        public int RDS; //(RainDrop Sensor)
+        public int IRS; //(Infrored Sensor)
 
-        public static bool Initialze()
-        {
-            return true;
-        }
-
-
-        public static void ReadAllData()
-        {
-            Arduino connection = new Arduino();
-            connection.FindArPort();
-            string data;
-            Console.WriteLine("Start!");
-            while (true)
-            {
-                data = connection.ReadAllArData();
-                if (data.Contains("Connection failed!"))
-                {
-                    connection.FindArPort();
-                }
-                if (data.Contains("Data from Arduino"))
-                {
-                    Console.WriteLine(data);
-                }
-                System.Threading.Thread.Sleep(100); // just wait a lot
-
-            }
-        }
     }
+
 }

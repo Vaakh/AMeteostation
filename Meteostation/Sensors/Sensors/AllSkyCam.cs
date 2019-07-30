@@ -55,13 +55,9 @@ namespace Sensors
                     {
                         UpdateCurrentSettings();
                         ImageSaveDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "RemotePhoto");
-                        Console.WriteLine("Flag 1");
                         MainCamera.SetSetting(PropertyID.SaveTo, (int)SaveTo.Host);
-                        Console.WriteLine("Flag 2");
                         MainCamera.SetSetting(PropertyID.ISO, ISOValues.GetValue(currentSettings[0]).IntValue);
-                        Console.WriteLine("Flag 3");
                         MainCamera.SetSetting(PropertyID.Av, AvValues.GetValue(currentSettings[3]).IntValue);
-                        Console.WriteLine("Flag 4");
                         MainCamera.SetCapacity(4096, int.MaxValue);
                         Console.WriteLine($"Set image output path to: {ImageSaveDirectory}");
 
