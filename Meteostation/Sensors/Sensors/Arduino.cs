@@ -94,15 +94,22 @@ namespace Sensors
 
     class ArduinoData
     {
-        public string[] RTC = new string[2]; //(RealTime Clock) first element date, second - time
-        public int[] MFS = new int[3]; //(Magnit Field Sensor) standart sequence: x, y, z
-        public int[] THI = new int[2]; //(TempIns/HumIns) first temp, second - hum
-        public int[] THO = new int[2]; //(TempOut/HumOut) first temp, second - hum
-        public int[] TPO = new int[2]; //(TempOut/PressOut) first temp, second - press
-        public int[] Wnd = new int[2]; //(WindSpeed/WindOrintation) first speed, second - orientation
-        public int LLS; //(LightLevel Sensor)
-        public int RDS; //(RainDrop Sensor)
-        public int IRS; //(Infrored Sensor)
+        public string RTC_date; // RealTime Clock Date
+        public string RTC_time; // RealTime Clock Time
+        public int MFS_x; // Magnit Field Sensor 
+        public int MFS_y; // Magnit Field Sensor
+        public int MFS_z; // Magnit Field Sensor
+        public int THI_t; // Temperature Inside
+        public int THI_h; // Humidity Inside
+        public int THO_t; // Temperature Outside
+        public int THO_h; // Humidity Outside
+        public int TPO_t; // Temperature Outside
+        public int TPO_P; // Pressure Outside
+        public int Wnd_s; // Wind Speed 
+        public int Wnd_o; // Wind Orintation
+        public int LLS; // LightLevel Sensor
+        public int RDS; // RainDrop Sensor
+        public int IRS; // Infrored Sensor
 
     }
 
