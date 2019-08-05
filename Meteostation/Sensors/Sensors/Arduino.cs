@@ -12,7 +12,7 @@ namespace Sensors
 
         int serial_speed = 9600;
         string arduino_message;
-        System.Timers.Timer aTimer;
+        Timer aTimer;
         SerialPort arduino_port;
 
         private bool ArduinoDetected()
@@ -21,11 +21,11 @@ namespace Sensors
             {
                 arduino_port.Open();
                 System.Threading.Thread.Sleep(10); // just wait a lot
-                arduino_message = arduino_port.ReadExisting();
-                //Console.WriteLine(ArduinoMessage);
+                arduino_message = arduino_port.ReadLine();
+                Console.WriteLine(arduino_message + " - port message");
                 arduino_port.Close();
-                // in arduino sketch should be Serial.println("Data from Arduino") inside  void loop()
-                if (arduino_message.Contains("Data from Arduino"))
+                // in arduino sketch should be ("Data_From_Arduino") inside  void loop()
+                if (arduino_message.Contains("Data_From_Arduino"))
                 {
                     return true;
                 }
@@ -65,7 +65,6 @@ namespace Sensors
         public bool FindArPort() //actually, initialization
         {
             bool ArduinoPortFound = false;
-            // this method contains recursion
             try
             {
                 string[] ports = SerialPort.GetPortNames();
@@ -94,22 +93,23 @@ namespace Sensors
 
     class ArduinoData
     {
+        public int Data_From_Arduino; // ID
         public string RTC_date; // RealTime Clock Date
         public string RTC_time; // RealTime Clock Time
-        public int MFS_x; // Magnit Field Sensor 
-        public int MFS_y; // Magnit Field Sensor
-        public int MFS_z; // Magnit Field Sensor
-        public int THI_t; // Temperature Inside
-        public int THI_h; // Humidity Inside
-        public int THO_t; // Temperature Outside
-        public int THO_h; // Humidity Outside
-        public int TPO_t; // Temperature Outside
-        public int TPO_p; // Pressure Outside
-        public int WND_s; // Wind Speed 
-        public int WND_o; // Wind Orintation
+        public float MFS_x; // Magnit Field Sensor 
+        public float MFS_y; // Magnit Field Sensor
+        public float MFS_z; // Magnit Field Sensor
+        public float THI_t; // Temperature Inside
+        public float THI_h; // Humidity Inside
+        public float THO_t; // Temperature Outside
+        public float THO_h; // Humidity Outside
+        public float TPO_t; // Temperature Outside
+        public float TPO_p; // Pressure Outside
+        public float WND_s; // Wind Speed 
+        public float WND_o; // Wind Orintation
         public int LLS; // LightLevel Sensor
         public int RDS; // RainDrop Sensor
-        public int IRS; // Infrored Sensor
+        public float IRS; // Infrored Sensor
 
     }
 

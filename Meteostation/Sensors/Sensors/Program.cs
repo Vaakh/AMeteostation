@@ -6,7 +6,13 @@ namespace Sensors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ArProcess np = new ArProcess();
+
+            while (true)
+            {
+                np.ProcessArData();
+                Console.WriteLine("FLag");
+            }
         }
     }
 }

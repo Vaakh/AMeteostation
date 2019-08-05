@@ -2,8 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-<<<<<<< HEAD
-=======
       "BouncyCastle.NetCore/1.8.3": {
         "type": "package",
         "dependencies": {
@@ -1834,7 +1832,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
->>>>>>> 9a37fc01f33204bfefeb5b59cbf266ada7c1ff5a
       "EDSDKLib/1.0.0": {
         "type": "project",
         "compile": {
@@ -1847,8 +1844,6 @@
     }
   },
   "libraries": {
-<<<<<<< HEAD
-=======
     "BouncyCastle.NetCore/1.8.3": {
       "sha512": "jAy3uHN1U9DpoT/TgLqDTEhlccn/4doOVxhSmmNsnoSsGfHT9Lwr634ac9D0YFujAhNw61nWF4UIpHyzv0aQww==",
       "type": "package",
@@ -6361,7 +6356,6 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
->>>>>>> 9a37fc01f33204bfefeb5b59cbf266ada7c1ff5a
     "EDSDKLib/1.0.0": {
       "type": "project",
       "path": "../../Libraries/EDSDKLib/EDSDKLib.csproj",
@@ -6370,50 +6364,46 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-<<<<<<< HEAD
-      "EDSDKLib >= 1.0.0"
-=======
       "CsvHelper >= 12.1.2",
       "EDSDKLib >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "MonoSerialPort >= 1.0.15",
       "MySql.Data >= 8.0.17",
       "Newtonsoft.Json >= 12.0.2"
->>>>>>> 9a37fc01f33204bfefeb5b59cbf266ada7c1ff5a
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Женя\\.nuget\\packages\\": {},
+    "C:\\Users\\Артём\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
+      "projectUniqueName": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
       "projectName": "Sensors",
-      "projectPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
-      "packagesPath": "C:\\Users\\Женя\\.nuget\\packages\\",
-      "outputPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\Sensors\\obj\\",
+      "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
+      "packagesPath": "C:\\Users\\Артём\\.nuget\\packages\\",
+      "outputPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Женя\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Артём\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Libraries\\EDSDKLib\\EDSDKLib.csproj": {
-              "projectPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Libraries\\EDSDKLib\\EDSDKLib.csproj"
+            "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Libraries\\EDSDKLib\\EDSDKLib.csproj": {
+              "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Libraries\\EDSDKLib\\EDSDKLib.csproj"
             }
           }
         }
@@ -6426,8 +6416,6 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-<<<<<<< HEAD
-=======
         "dependencies": {
           "CsvHelper": {
             "target": "Package",
@@ -6452,7 +6440,6 @@
             "version": "[12.0.2, )"
           }
         },
->>>>>>> 9a37fc01f33204bfefeb5b59cbf266ada7c1ff5a
         "imports": [
           "net461"
         ],
@@ -6460,5 +6447,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\obj\\Sensors.csproj.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
