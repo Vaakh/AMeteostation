@@ -1,0 +1,7 @@
+/For ARDUINO UNO/
+D7 - THI
+D8 - THO
+A2 - RDS
+A3 - LLS
+A4 - SDA
+A5 - SCL

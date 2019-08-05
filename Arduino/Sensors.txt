@@ -1,0 +1,10 @@
+TempIn/HumIn (THI) DHT22
+TempOut/HumOut (THO) DHT22
+LightLevelSensor (LLS) RobotDyn_LightSensor
+TempOut/PressOut (TPO) BMP180 temperature values are in Celsius (C) and pressure values are in hecto Pascal (hPa)
+RealTimeClock (RTC) on chip DS1307
+RainDropSensor (RDS) FlyingFish_MH-RD
+MagneticFieldSensor (MFS) GY-273 magnetic vector values are in micro-Tesla (uT)
+InfroredSensor (IRS) GY-906 temperature values are in Celsius (C)
+WindSpeed/WindOrientation (WND) YGS-FS-5V-W1 / YGS-FX-5V-W1
+  
