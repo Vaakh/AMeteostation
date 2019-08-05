@@ -104,9 +104,9 @@ namespace Sensors
         public int THO_t; // Temperature Outside
         public int THO_h; // Humidity Outside
         public int TPO_t; // Temperature Outside
-        public int TPO_P; // Pressure Outside
-        public int Wnd_s; // Wind Speed 
-        public int Wnd_o; // Wind Orintation
+        public int TPO_p; // Pressure Outside
+        public int WND_s; // Wind Speed 
+        public int WND_o; // Wind Orintation
         public int LLS; // LightLevel Sensor
         public int RDS; // RainDrop Sensor
         public int IRS; // Infrored Sensor
