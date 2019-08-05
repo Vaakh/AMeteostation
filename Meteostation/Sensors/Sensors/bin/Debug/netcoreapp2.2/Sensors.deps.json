@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "5b530da5e78194c5df468a9e391e62381dacd72c"
+    "signature": "b3f0d61a4b2605538152163f72831445df755eb6"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,7 +10,8 @@
         "dependencies": {
           "CsvHelper": "12.1.2",
           "EDSDKLib": "1.0.0",
-          "MonoSerialPort": "1.0.15"
+          "MonoSerialPort": "1.0.15",
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "Sensors.dll": {}
@@ -233,6 +234,14 @@
           "lib/netstandard2.0/MonoSerialPort.dll": {
             "assemblyVersion": "1.0.15.0",
             "fileVersion": "1.0.15.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
           }
         }
       },
@@ -926,6 +935,13 @@
       "sha512": "sha512-kYyuncinwyFxmSIIsApYFpk9IAB7S2/YDysCsrtgQVV691Bd+1wcJDcXlwAYVxRAnQjGDQH5WpkOzaDUQqtdHA==",
       "path": "monoserialport/1.0.15",
       "hashPath": "monoserialport.1.0.15.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
       "type": "package",
