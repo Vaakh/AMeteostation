@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
@@ -12,11 +12,10 @@ namespace Sensors
     {
         static CanonAPI APIHandler;
         static Camera MainCamera;
-        static string ImageSaveDirectory;
+        public string ImageSaveDirectory;
+        public string FileeName;
         static bool Error = false;
         static ManualResetEvent WaitEvent = new ManualResetEvent(false);
-        string[] autoSettings; //where aS[0] is ISO(sensitivity), aS[1] is Tv(exposition), aS[2] is Tv in bulb mode and aS[3] is Av(apperture)
-        string[] currentSettings; //where cS[0] is ISO(sensitivity), cS[1] is Tv(exposition), cS[2] is Tv in bulb mode and cS[3] is Av(apperture)
         private string errorMessage;
 
         public bool Initialize()
@@ -44,7 +43,7 @@ namespace Sensors
 
         }
 
-        public bool TakePhoto()
+        public bool TakePhoto(string[] camSettings)  //where cS[0] is ISO(sensitivity), cS[1] is Tv(exposition), cS[2] is Tv in bulb mode and cS[3] is Av(apperture)
         {
             try
             {
@@ -53,20 +52,19 @@ namespace Sensors
                 {
                     if (!Error)
                     {
-                        UpdateCurrentSettings();
                         ImageSaveDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "RemotePhoto");
                         MainCamera.SetSetting(PropertyID.SaveTo, (int)SaveTo.Host);
-                        MainCamera.SetSetting(PropertyID.ISO, ISOValues.GetValue(currentSettings[0]).IntValue);
-                        MainCamera.SetSetting(PropertyID.Av, AvValues.GetValue(currentSettings[3]).IntValue);
+                        MainCamera.SetSetting(PropertyID.ISO, ISOValues.GetValue(camSettings[0]).IntValue);
+                        MainCamera.SetSetting(PropertyID.Av, AvValues.GetValue(camSettings[3]).IntValue);
                         MainCamera.SetCapacity(4096, int.MaxValue);
                         Console.WriteLine($"Set image output path to: {ImageSaveDirectory}");
 
                         Console.WriteLine("Taking photo with special settings...");
                         CameraValue tv = TvValues.GetValue(MainCamera.GetInt32Setting(PropertyID.Tv));
-                        if (tv == TvValues.Bulb) MainCamera.TakePhotoBulb(int.Parse(currentSettings[2]));
+                        if (tv == TvValues.Bulb) MainCamera.TakePhotoBulb(int.Parse(camSettings[2]));
                         else
                         {
-                            MainCamera.SetSetting(PropertyID.Tv, TvValues.GetValue(currentSettings[1]).IntValue);
+                            MainCamera.SetSetting(PropertyID.Tv, TvValues.GetValue(camSettings[1]).IntValue);
                             MainCamera.TakePhoto();
                         }
                         WaitEvent.WaitOne();
@@ -86,22 +84,6 @@ namespace Sensors
             }
         }
 
-        private void UpdateCurrentSettings()
-        {
-            UpdateAutoSettings();
-            for (int i = 0; i <= 4; i++)
-            {
-                currentSettings[i] = autoSettings[i];
-            }
-        }
-
-        private void UpdateAutoSettings()
-        {
-            autoSettings[0] = "ISO 100";
-            autoSettings[1] = "1\"";
-            autoSettings[2] = "250";
-            autoSettings[3] = "5.6";
-        }
 
         private static void APIHandler_CameraAdded(CanonAPI sender)
         {

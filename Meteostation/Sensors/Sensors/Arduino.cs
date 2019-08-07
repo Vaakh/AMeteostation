@@ -1,9 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.IO.Ports;
-using System.Text;
 using System.Timers;
-using CsvHelper;
 
 namespace Sensors
 {
