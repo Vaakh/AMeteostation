@@ -12,8 +12,8 @@ namespace Sensors
     {
         static CanonAPI APIHandler;
         static Camera MainCamera;
-        public string ImageSaveDirectory;
-        public string FileeName;
+        public static string ImageSaveDirectory;
+        public static string FileName;
         static bool Error = false;
         static ManualResetEvent WaitEvent = new ManualResetEvent(false);
         private string errorMessage;
@@ -102,6 +102,7 @@ namespace Sensors
             {
                 Console.WriteLine("Starting image download...");
                 sender.DownloadFile(Info, ImageSaveDirectory);
+                FileName = Info.FileName;
             }
             catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); Error = true; }
             finally { WaitEvent.Set(); }

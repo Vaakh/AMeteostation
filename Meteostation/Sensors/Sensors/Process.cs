@@ -101,10 +101,10 @@ namespace Sensors
                 }
                 catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); }
             }
-            
+
         }
 
-        private string dataPrep (float given_value)
+        private string dataPrep(float given_value)
         {
             double value = given_value;
             value = Math.Round(value, 2);
@@ -118,7 +118,10 @@ namespace Sensors
         public bool cam_process_shutdown = false;
         string[] weatherData;
         string[] settings;
+        string[] autoSettings;
         string[] currentSettings;
+        int minLLSLevel = 1024;
+
         public void ProcessCamData()
         {
             while (!cam_process_shutdown)
@@ -187,12 +190,13 @@ namespace Sensors
 
                             cam.TakePhoto(currentSettings);
 
-                            qery = "UPDATE `datatest`.`" + tableName + "` SET `photo_path` = '" + Path.Combine(cam.ImageSaveDirectory, cam.FileeName) + "' WHERE (`DataID` = '" + weatherData[0] + "');";
+                            qery = "UPDATE `datatest`.`" + tableName + "` SET `photo_path` = '" + Path.Combine(AllSkyCam.ImageSaveDirectory, AllSkyCam.FileName) + "' WHERE (`DataID` = '" + weatherData[0] + "');";
                             MySqlCommand command = new MySqlCommand(qery, conn);
                             int name = command.ExecuteNonQuery();
                         }
 
                         conn.Close();
+                        Thread.Sleep(6000);
                     }
                 }
                 catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); }
@@ -206,12 +210,46 @@ namespace Sensors
 
         private string ConvertToBulb(string Tv)
         {
+
+            if (Tv.Contains("(1/3)"))
+            {
+                string[] tvSplit = Tv.Split(" ", 2);
+                Tv = tvSplit[1];
+            }
+
+            if (Tv.Contains("\""))
+            {
+                Tv.Replace("\"", ",");
+                Tv = Math.Round(Double.Parse(Tv) * 1000).ToString();
+            }
+
+            if (Tv.Contains("/"))
+            {
+                string[] divTv = Tv.Split("/", 2);
+                Tv = Math.Round((Double.Parse(divTv[1]) / Double.Parse(divTv[2])) * 1000).ToString();
+            }
+
             return Tv;
         }
 
         private string[] AutoSettings(string[] weatherData)
         {
-            return weatherData;
+
+            if (int.Parse(weatherData[6]) < minLLSLevel)
+            {
+                autoSettings[0] = "Auto";
+                autoSettings[1] = "Auto";
+                autoSettings[2] = "Auto";
+                autoSettings[3] = "Auto";
+            }
+            else
+            {
+                autoSettings[0] = "ISO 3200";
+                autoSettings[1] = "30\"";
+                autoSettings[2] = ConvertToBulb(autoSettings[1]);
+                autoSettings[3] = "2.8";
+            }
+            return autoSettings;
         }
     }
 
