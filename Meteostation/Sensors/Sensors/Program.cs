@@ -11,6 +11,7 @@ namespace Sensors
 
             while (true)
             {
+                //np.ProcessArData();
                 cp.ProcessCamData();
                 Console.WriteLine("FLag");
             }
