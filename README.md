@@ -5,4 +5,7 @@ Software contains:
  Module for Rasberri PI, that collect data from Arduino and proccess it;
  Module for Raspberri PI, that control Canon's EOS camera and process photos;
  Module for Raspberri PI, that respinsible for server and web-site to presenting data to the user;
-Now none of this modulesnot ready until the end (T_T) but I'm working on it 
+Now none of this modulesnot ready until the end (T_T) but I'm working on it
+<head> 
+ "head"
+<head\>

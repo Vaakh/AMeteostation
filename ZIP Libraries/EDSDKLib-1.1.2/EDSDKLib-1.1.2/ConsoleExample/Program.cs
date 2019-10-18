@@ -11,11 +11,14 @@ namespace ConsoleExample
     {
         static CanonAPI APIHandler;
         static Camera MainCamera;
-        static string ImageSaveDirectory;
+        public static string ImageSaveDirectory;
+        public static string FileName;
         static bool Error = false;
         static ManualResetEvent WaitEvent = new ManualResetEvent(false);
+        private string errorMessage;
+        string[] autoSettings = { "Auto", "Auto", "Auto", "Auto" };
 
-        static void Main(string[] args)
+        public bool Initialize()
         {
             try
             {
@@ -27,40 +30,67 @@ namespace ConsoleExample
                     APIHandler.CameraAdded += APIHandler_CameraAdded;
                     WaitEvent.WaitOne();
                     WaitEvent.Reset();
+                    return false;
                 }
-
-                if (!Error)
-                {
-                    ImageSaveDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "RemotePhoto");
-                    MainCamera.SetSetting(PropertyID.SaveTo, (int)SaveTo.Host);
-                    MainCamera.SetCapacity(4096, int.MaxValue);
-                    Console.WriteLine($"Set image output path to: {ImageSaveDirectory}");
-
-                    Console.WriteLine("Taking photo with current settings...");
-                    CameraValue tv = TvValues.GetValue(MainCamera.GetInt32Setting(PropertyID.Tv));
-                    if (tv == TvValues.Bulb) MainCamera.TakePhotoBulb(2);
-                    else MainCamera.TakePhoto();
-                    WaitEvent.WaitOne();
-
-                    if (!Error) Console.WriteLine("Photo taken and saved");
-                }
+                else { MainCamera.CloseSession(); Console.WriteLine("Session closed"); return true; }
             }
-            catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); return false; }
             finally
             {
                 MainCamera?.Dispose();
                 APIHandler.Dispose();
-                Console.WriteLine("Good bye! (press any key to close)");
-                Console.ReadKey();
+            }
+
+        }
+
+        public bool TakePhoto(string[] camSettings)  //where cS[0] is ISO(sensitivity), cS[1] is Tv(exposition), cS[2] is Tv in bulb mode and cS[3] is Av(apperture)
+        {
+            try
+            {
+                APIHandler = new CanonAPI();
+                if (OpenSession())
+                {
+                    if (!Error)
+                    {
+                        ImageSaveDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "RemotePhoto");
+                        MainCamera.SetSetting(PropertyID.SaveTo, (int)SaveTo.Host);
+                        MainCamera.SetSetting(PropertyID.ISO, ISOValues.GetValue(camSettings[0]).IntValue);
+                        MainCamera.SetSetting(PropertyID.Av, AvValues.GetValue(camSettings[3]).IntValue);
+                        MainCamera.SetCapacity(4096, int.MaxValue);
+                        Console.WriteLine($"Set image output path to: {ImageSaveDirectory}");
+
+                        Console.WriteLine("Taking photo with special settings...");
+                        CameraValue tv = TvValues.GetValue(MainCamera.GetInt32Setting(PropertyID.Tv));
+                        if (tv == TvValues.Bulb) MainCamera.TakePhotoBulb(int.Parse(camSettings[2]));
+                        else
+                        {
+                            MainCamera.SetSetting(PropertyID.Tv, TvValues.GetValue(camSettings[1]).IntValue);
+                            MainCamera.TakePhoto();
+                        }
+                        WaitEvent.WaitOne();
+
+                        if (!Error) { Console.WriteLine("Photo taken and saved"); return true; }
+                        else return false;
+                    }
+                    else return false;
+                }
+                else return false;
+            }
+            catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); return false; }
+            finally
+            {
+                MainCamera?.Dispose();
+                APIHandler.Dispose();
             }
         }
+
 
         private static void APIHandler_CameraAdded(CanonAPI sender)
         {
             try
             {
                 Console.WriteLine("Camera added event received");
-                if (!OpenSession()) { Console.WriteLine("Sorry, something went wrong. No camera"); Error = true; }
+                if (!OpenSession()) { Console.WriteLine("Sorry, something went wrong. This camera is unavailable"); Error = true; }
             }
             catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); Error = true; }
             finally { WaitEvent.Set(); }
@@ -72,6 +102,7 @@ namespace ConsoleExample
             {
                 Console.WriteLine("Starting image download...");
                 sender.DownloadFile(Info, ImageSaveDirectory);
+                FileName = Info.FileName;
             }
             catch (Exception ex) { Console.WriteLine("Error: " + ex.Message); Error = true; }
             finally { WaitEvent.Set(); }
@@ -89,6 +120,14 @@ namespace ConsoleExample
                 return true;
             }
             else return false;
+        }
+
+        static void Main()
+        {
+            Program p = new Program();
+            p.TakePhoto(p.autoSettings);
+            Console.WriteLine("The end");
+            Console.ReadKey();
         }
     }
 }

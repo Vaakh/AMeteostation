@@ -1,0 +1,15 @@
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\bin\Debug\WpfExample.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\bin\Debug\WpfExample.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\bin\Debug\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\bin\Debug\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\MainWindow.g.cs
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\App.g.cs
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample_MarkupCompile.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample_MarkupCompile.lref
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\MainWindow.baml
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample.g.resources
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample.csproj.CopyComplete
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample.exe
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\WpfExample\obj\x86\Debug\WpfExample.pdb

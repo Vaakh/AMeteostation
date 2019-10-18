@@ -1,0 +1,4 @@
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.csprojAssemblyReference.cache
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.AssemblyInfoInputs.cache
+D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.AssemblyInfo.cs
