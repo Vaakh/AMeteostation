@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
+using System.Threading.Tasks;
+//using System.Runtime.Remoting.Messaging;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
 using EOSDigital.SDK;
@@ -342,6 +343,10 @@ namespace EOSDigital.API
         /// <param name="errorCode">The return code of the SDK call</param>
         /// <exception cref="SDKException">If a severe error is recognized or the <see cref="NonSevereErrorHappened"/>
         /// event is null with a non-severe error, it will be thrown as an exception</exception>
+        /// TO DO: rewrite else
+        /// previous version of else
+
+
         public static void CheckError(object sender, ErrorCode errorCode)
         {
             if (errorCode == ErrorCode.OK) return;
@@ -353,12 +358,14 @@ namespace EOSDigital.API
                 if (!Severe) Severe = NonSevereErrorHappenedEvent == null;
 
                 if (Severe) throw new SDKException(errorCode);
-                else NonSevereErrorHappenedEvent.BeginInvoke(sender, errorCode, (a) =>
+
+                /*else NonSevereErrorHappenedEvent.BeginInvoke(sender, errorCode, (a) =>
                 {
                     var ar = a as AsyncResult;
                     var invokedMethod = ar.AsyncDelegate as SDKExceptionHandler;
                     invokedMethod.EndInvoke(a);
-                }, null);
+                }, null); */
+
             }
         }
 
@@ -402,11 +409,12 @@ namespace EOSDigital.API
         /// <param name="sender">The sender object</param>
         /// <param name="ex">The exception that happened</param>
         /// <returns>True if the error could be passed on; false otherwise</returns>
+        /// TODO: rewrite else
         public static bool ReportError(object sender, Exception ex)
         {
             var SevereErrorHappenedEvent = SevereErrorHappened;
             if (SevereErrorHappenedEvent == null) return false;
-            else
+            /*else
             {
                 SevereErrorHappenedEvent.BeginInvoke(sender, ex, (a) =>
                 {
@@ -415,7 +423,32 @@ namespace EOSDigital.API
                     invokedMethod.EndInvoke(a);
                 }, null);
                 return true;
-            }
+            } */
+            else return true;
         }
     }
+
+
+/*
+    // Calling del.BeginInvoke starts executing the delegate on a
+    // separate ThreadPool thread
+    Console.WriteLine("Starting with BeginInvoke");
+    var result = del.BeginInvoke(11, WorkCallback, null);
+
+    var ret = del.EndInvoke(result);
+
+
+
+    // Schedule the work using a Task and 
+    // del.Invoke instead of del.BeginInvoke.
+    Console.WriteLine("Starting with Task.Run");
+    var workTask = Task.Run(() => del.Invoke(11));
+
+    // We await the task instead of calling EndInvoke.
+    // Either workTask or followUpTask can be awaited depending on which
+    // needs to be finished before proceeding. Both should eventually
+    // be awaited so that exceptions that may have been thrown can be handled.
+    var ret = await workTask;
+        await followUpTask;
+    */
 }

@@ -1,4 +1,0 @@
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\x86\Debug\netcoreapp2.2\EDSDKLib.csprojAssemblyReference.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\x86\Debug\netcoreapp2.2\EDSDKLib.csproj.CoreCompileInputs.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\x86\Debug\netcoreapp2.2\EDSDKLib.AssemblyInfoInputs.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\x86\Debug\netcoreapp2.2\EDSDKLib.AssemblyInfo.cs

@@ -1,8 +1,0 @@
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\bin\Debug\net35\EDSDKLib.dll
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\bin\Debug\net35\EDSDKLib.pdb
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\obj\Debug\net35\EDSDKLib.csprojAssemblyReference.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\obj\Debug\net35\EDSDKLib.csproj.CoreCompileInputs.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\obj\Debug\net35\EDSDKLib.AssemblyInfoInputs.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\obj\Debug\net35\EDSDKLib.AssemblyInfo.cs
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\obj\Debug\net35\EDSDKLib.dll
-D:\Repos\GitHub\AMeteostation\Meteostation\Libraries\EDSDKLib\obj\Debug\net35\EDSDKLib.pdb

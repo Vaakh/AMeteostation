@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using EOSDigital.SDK;
@@ -265,7 +266,7 @@ namespace EOSDigital.API
         public Bitmap GetFileThumb(string filepath)
         {
             //create a file stream to given file
-            using (var stream = new SDKStream(filepath, FileCreateDisposition.OpenExisting, FileAccess.Read))
+            using (var stream = new SDKStream(filepath, FileCreateDisposition.OpenExisting, SDK.FileAccess.Read))
             {
                 //Create a thumbnail Bitmap from the stream
                 return GetImage(stream.Reference, ImageSource.Thumbnail);
@@ -334,4 +335,5 @@ namespace EOSDigital.API
 
         #endregion
     }
+
 }

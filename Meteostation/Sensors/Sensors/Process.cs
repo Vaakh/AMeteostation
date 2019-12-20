@@ -85,14 +85,23 @@ namespace Sensors
                         bool exists = arProc.isTableExists(tableName, conn);
                         if (exists == false)
                         {
-                            qery = "CREATE TABLE `datatest`.`" + tableName + "` ( `DataID` INT NOT NULL, `RTC_time` TIME NULL, `MFS_x` FLOAT NULL, `MFS_y` FLOAT NULL, `MFS_z` FLOAT NULL, `THI_t` FLOAT NULL, `THI_h` FLOAT NULL, `THO_t` FLOAT NULL, `THO_h` FLOAT NULL, `TPO_t` FLOAT NULL, `TPO_p` FLOAT NULL, `WND_s` FLOAT NULL, `WND_o` FLOAT NULL, `LLS` INT NULL, `RDS` INT NULL, `IRS` FLOAT NULL, `photo_path` VARCHAR(120) NULL, PRIMARY KEY(`DataID`), UNIQUE INDEX `DataID_UNIQUE` (`DataID` ASC) VISIBLE); INSERT INTO `datatest`.`" + tableName + "` (`DataID`) VALUES('0');";
+                            qery = "CREATE TABLE `datatest`.`" + tableName + "` ( `DataID` INT NOT NULL, `RTC_time` TIME NULL, `MFS_x` FLOAT NULL, `MFS_y` FLOAT NULL, `MFS_z` FLOAT NULL, " +
+                                                                                "`THI_t` FLOAT NULL, `THI_h` FLOAT NULL, `THO_t` FLOAT NULL, `THO_h` FLOAT NULL, `TPO_t` FLOAT NULL, `TPO_p` FLOAT NULL, " +
+                                                                                "`WND_s` FLOAT NULL, `WND_o` FLOAT NULL, `LLS` INT NULL, `RDS` INT NULL, `IRS` FLOAT NULL, `photo_path` VARCHAR(120) NULL, " +
+                                                                                "PRIMARY KEY(`DataID`), UNIQUE INDEX `DataID_UNIQUE` (`DataID` ASC) VISIBLE); INSERT INTO `datatest`.`" + tableName + "` (`DataID`) VALUES('0');";
                             MySqlCommand createTable = new MySqlCommand(qery, conn);
                             createTable.ExecuteNonQuery();
                         }
                         qery = "SELECT MAX(`DataID`) FROM `datatest`.`" + tableName + "`;";
                         MySqlCommand getId = new MySqlCommand(qery, conn);
                         currentId = Convert.ToInt32(getId.ExecuteScalar().ToString()) + 1;
-                        qery = "INSERT INTO `datatest`.`" + tableName + "` (`DataID`, `RTC_time`, `MFS_x`, `MFS_y`, `MFS_z`, `THI_t`, `THI_h`, `THO_t`, `THO_h`, `TPO_t`, `TPO_p`, `WND_s`, `WND_o`, `LLS`, `RDS`, `IRS`) VALUES('" + currentId.ToString() + "', '" + p_data.RTC_time + "', '" + dataPrep(p_data.MFS_x) + "', '" + dataPrep(p_data.MFS_y) + "', '" + dataPrep(p_data.MFS_z) + "', '" + dataPrep(p_data.THI_t) + "', '" + dataPrep(p_data.THI_h) + "', '" + dataPrep(p_data.THO_t) + "', '" + dataPrep(p_data.THO_h) + "', '" + dataPrep(p_data.TPO_t) + "', '" + dataPrep(p_data.TPO_p) + "', '" + dataPrep(p_data.WND_s) + "', '" + dataPrep(p_data.WND_o) + "', '" + p_data.LLS.ToString() + "', '" + p_data.RDS.ToString() + "', '" + dataPrep(p_data.IRS) + "');";
+                        qery = "INSERT INTO `datatest`.`" + tableName + "` (`DataID`, `RTC_time`, `MFS_x`, `MFS_y`, `MFS_z`, `THI_t`, `THI_h`, " +
+                                                                            "`THO_t`, `THO_h`, `TPO_t`, `TPO_p`, `WND_s`, `WND_o`, `LLS`, `RDS`, `IRS`) " +
+                                                                            "VALUES('" + currentId.ToString() + "', '" + p_data.RTC_time + "', '" + 
+                                                                            dataPrep(p_data.MFS_x) + "', '" + dataPrep(p_data.MFS_y) + "', '" + dataPrep(p_data.MFS_z) + "', '" + 
+                                                                            dataPrep(p_data.THI_t) + "', '" + dataPrep(p_data.THI_h) + "', '" + dataPrep(p_data.THO_t) + "', '" + dataPrep(p_data.THO_h) + "', '" + 
+                                                                            dataPrep(p_data.TPO_t) + "', '" + dataPrep(p_data.TPO_p) + "', '" + dataPrep(p_data.WND_s) + "', '" + dataPrep(p_data.WND_o) + "', '" + 
+                                                                            p_data.LLS.ToString() + "', '" + p_data.RDS.ToString() + "', '" + dataPrep(p_data.IRS) + "');";
                         MySqlCommand command = new MySqlCommand(qery, conn);
                         int name = command.ExecuteNonQuery();
 
@@ -130,6 +139,8 @@ namespace Sensors
                 {
                     Process camProc = new Process();
                     AllSkyCam cam = new AllSkyCam();
+
+                    Console.WriteLine("Test Flag Cam");
 
                     while (!cam.Initialize())
                     {
