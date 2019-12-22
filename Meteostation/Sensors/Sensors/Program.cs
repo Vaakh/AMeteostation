@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Sensors
 {
@@ -7,13 +8,32 @@ namespace Sensors
         static void Main(string[] args)
         {
             ArProcess np = new ArProcess();
-            CamProcess cp = new CamProcess();
+            Kostil cam = new Kostil();
+
+            Thread camThread = new Thread(cam.CamThr);
+            //camThread.Start();
 
             while (true)
             {
-                //np.ProcessArData();
+                Console.WriteLine("Ar Start");
+                np.ProcessArData();
+                Console.WriteLine("ArFLag");
+            }
+        }
+
+    }
+
+    class Kostil
+    {
+        CamProcess cp = new CamProcess();
+
+        public void CamThr()
+        {
+            while (true)
+            {
+                Console.WriteLine("Cam Start");
                 cp.ProcessCamData();
-                Console.WriteLine("FLag");
+                Console.WriteLine("CamFLag");
             }
         }
     }

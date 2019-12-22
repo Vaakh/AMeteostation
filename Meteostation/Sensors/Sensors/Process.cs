@@ -63,6 +63,7 @@ namespace Sensors
                     while (!arduino.FindArPort())
                     {
                         Thread.Sleep(1000);
+                        Console.WriteLine("Finding Ar port");
                     }
 
                     Console.WriteLine("ArduinoPort found");

@@ -901,30 +901,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Артём\\.nuget\\packages\\": {},
+    "C:\\Users\\Женя\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj",
+      "projectUniqueName": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj",
       "projectName": "EDSDKLib",
-      "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj",
-      "packagesPath": "C:\\Users\\Артём\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\EDSDKLib\\obj\\",
+      "projectPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj",
+      "packagesPath": "C:\\Users\\Женя\\.nuget\\packages\\",
+      "outputPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\EDSDKLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Артём\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Женя\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

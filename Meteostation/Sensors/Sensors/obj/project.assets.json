@@ -2670,11 +2670,12 @@
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "x0oIpq8GOdB1cl4kC3xbUP8PmGEjWHfXHSj7a+SVvZy8RTpUA2W7FaI1rGTeuxL++SmgAY7ijPTgdAT3wGvzEA==",
+      "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
       "type": "package",
       "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -2697,7 +2698,7 @@
       ]
     },
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "9F1pWJ95AD1OYbq4P64U3kLMHzaAFDaPWqMmg1OzIyxF1uTOV+DxNHYDIQ5kmMNKdEdzDei0q9RsvLJzp9+gxQ==",
+      "sha512": "LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
       "type": "package",
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -2712,7 +2713,7 @@
       ]
     },
     "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "Ia4kowPNIsnSpMA5yBmhdOJh0NK4U1lXvgIGwbAeQPQNQmJVXN/STEUBmJ4Igdc5a/GTFKlnIzoo+u4F441GQA==",
+      "sha512": "38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
       "type": "package",
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -2727,7 +2728,7 @@
       ]
     },
     "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "YKU1yWYZutaw9QqVY8jYFpQl2bnWP1yoZUYxM7QhppoKTGIMDVmCts4zntX88Od96g6GZtAWyYA1EC1zh5T8yg==",
+      "sha512": "YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "type": "package",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -6394,37 +6395,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Артём\\.nuget\\packages\\": {},
+    "C:\\Users\\Женя\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
+      "projectUniqueName": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
       "projectName": "Sensors",
-      "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
-      "packagesPath": "C:\\Users\\Артём\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\Sensors\\obj\\",
+      "projectPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\Sensors\\Sensors.csproj",
+      "packagesPath": "C:\\Users\\Женя\\.nuget\\packages\\",
+      "outputPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\Sensors\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Артём\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Женя\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj": {
-              "projectPath": "D:\\Repos\\GitHub\\AMeteostation\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj"
+            "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj": {
+              "projectPath": "F:\\Repos\\GitHub\\AMeteostatoin\\Meteostation\\Sensors\\EDSDKLib\\EDSDKLib.csproj"
             }
           }
         }
@@ -6443,7 +6444,6 @@
             "version": "[12.1.2, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
