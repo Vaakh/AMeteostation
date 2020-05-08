@@ -1,9 +1,0 @@
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\bin\Debug\netcoreapp2.1\EDSDKLib.deps.json
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\bin\Debug\netcoreapp2.1\EDSDKLib.dll
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\bin\Debug\netcoreapp2.1\EDSDKLib.pdb
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.csproj.CoreCompileInputs.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.AssemblyInfoInputs.cache
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.AssemblyInfo.cs
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.dll
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\obj\Debug\netcoreapp2.1\EDSDKLib.pdb
-D:\Repos\GitHub\AMeteostation\Meteostation\Sensors\EDSDKLib\bin\Debug\netcoreapp2.1\EDSDK.dll
