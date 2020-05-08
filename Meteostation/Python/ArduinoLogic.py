@@ -17,11 +17,11 @@ def processArData():
         currentId = scon.readFromDB(sqq.selectmaxidquery)
         print(currentId)
         if currentId is None:
-            currentId = 2
+            currentId = 1
         else:
             currentId = int(currentId) + 1
         print(currentId)
-        query = sqq.buildInsertQuery(currentId, prepdata["RTC_time"], prepdata["MFS_x"], prepdata["MFS_y"],
+        query = sqq.buildInsertArQuery(currentId, prepdata["RTC_time"], prepdata["MFS_x"], prepdata["MFS_y"],
                                      prepdata["MFS_z"], prepdata["THI_t"], prepdata["THI_h"], prepdata["THO_t"],
                                      prepdata["THO_h"], prepdata["TPO_t"], prepdata["TPO_p"], prepdata["WND_s"],
                                      prepdata["WND_o"], prepdata["LLS"], prepdata["RDS"], prepdata["IRS"])

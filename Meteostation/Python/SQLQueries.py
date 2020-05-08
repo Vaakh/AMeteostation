@@ -20,14 +20,14 @@ createtablequery = "CREATE TABLE `datatest`.`" + tableName + "` ( `DataID` INT N
                                                                              "120) NULL, " + "PRIMARY KEY(`DataID`), " \
                                                                                              "UNIQUE INDEX " \
                                                                                              "`DataID_UNIQUE` (" \
-                                                                                             "`DataID` ASC) VISIBLE); " \
+                                                                                             "`DataID` ASC)); " \
                                                                                              "INSERT INTO " \
                                                                                              "`datatest`.`" + \
                                                                                 tableName + "` (`DataID`) VALUES('0'); "
 
 selectmaxidquery: str = "SELECT MAX(`DataID`) FROM `datatest`.`" + tableName + "`;"
 
-def buildInsertQuery(currentId, RTC_time, MFS_x, MFS_y, MFS_z,
+def buildInsertArQuery(currentId, RTC_time, MFS_x, MFS_y, MFS_z,
                      THI_t, THI_h, THO_t, THO_h, TPO_t, TPO_p,
                      WND_s, WND_o, LLS, RDS, IRS):
     query = "INSERT INTO `datatest`.`" + tableName + "` (`DataID`, `RTC_time`, `MFS_x`, `MFS_y`, `MFS_z`, `THI_t`, " \
@@ -42,3 +42,13 @@ def buildInsertQuery(currentId, RTC_time, MFS_x, MFS_y, MFS_z,
                                         "'" + str(WND_o).replace(',', '.') + "', '" + str(LLS) + "', " \
                                         "'" + str(RDS) + "', '" + str(IRS) + "');"
     return query
+
+def selectLLSquery(dataid):
+    query = "SELECT `LLS` FROM datatest.`2020/5/7` WHERE `DataID` = " + str(dataid) + ";"
+    return query
+
+def buildInsertCamQuery(pathToPhoto, dataid):
+    query = "UPDATE `datatest`.`" + tableName + "` SET `photo_path` = " + "'" + str(pathToPhoto) + "' WHERE `DataID` = " + str(dataid) + ";"
+    return query
+
+

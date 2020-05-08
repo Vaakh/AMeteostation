@@ -1,7 +1,7 @@
 import mysql.connector
 from mysql.connector import errorcode
 import SQLQueries as sq
-
+from time import sleep
 
 class SQLConnector:
     def __init__(self):
@@ -66,12 +66,14 @@ class SQLConnector:
                     cursor.close()
                     self.conn.close()
 
+            sleep(1)
             if self.connect():
                 cursor = self.conn.cursor(buffered=True)
                 cursor.execute(msgquery)
                 msg = cursor.fetchone()
                 cursor.close()
                 self.conn.close()
-            return msg[0]
+            if msg[0] is not None:
+                return msg[0]
         except mysql.connector.Error as err:
             print(err)
