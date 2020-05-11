@@ -2,7 +2,7 @@ from datetime import datetime
 
 server = 'localhost'
 user = 'Meteostation'
-database = 'datatest'
+database = 'meteo_db'
 password = 'OpenSourse!123'
 
 ct = datetime.now()

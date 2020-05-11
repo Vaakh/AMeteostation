@@ -39,7 +39,7 @@ nightshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutter
 
 
 folder_name = shot_date + picID
-save_location = "/home/artemy/test/gphoto/images/" + folder_name
+save_location = "/home/pi/Pictures/gphoto/images/" + folder_name
 
 def createSaveFolder():
     try:
@@ -67,7 +67,7 @@ def renameFiles(ID):
 
 def takePhotoWSQLData():
     killgphoto2Process()
-    gp(clearCommand)
+    #gp(clearCommand)
     createSaveFolder()
 
     scon = sqc.SQLConnector()
@@ -122,11 +122,11 @@ def takePhotoWSQLDataTest():
 
 def takeTestPhoto():
     killgphoto2Process()
-    gp(clearCommand)
+    #gp(clearCommand)
     gp(autoisoCommand)
     gp(twilightshutterspeedCommand)
     createSaveFolder()
     captureImages()
     renameFiles(picID)
 
-takePhotoWSQLDataTest() 
+takeTestPhoto() 
