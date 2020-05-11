@@ -73,7 +73,9 @@ class SQLConnector:
                 msg = cursor.fetchone()
                 cursor.close()
                 self.conn.close()
-            if msg[0] is not None:
+            try:
                 return msg[0]
+            except:
+                return "None"
         except mysql.connector.Error as err:
             print(err)
