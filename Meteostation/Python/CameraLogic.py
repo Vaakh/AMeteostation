@@ -33,9 +33,10 @@ downloadCommand = ["--get-all-files"]
 autoisoCommand = ["--set-config-value", "/main/imgsettings/iso=Auto"]
 nightisoCommand = ["--set-config-value", "/main/imgsettings/iso=3200"]
 
-dayshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/5000"]
-twilightshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/100"]
-nightshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=30"]
+1div5000shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/5000"]
+1div100shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/100"]
+1shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1"]
+30shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=30"]
 
 
 folder_name = shot_date + picID
@@ -74,17 +75,20 @@ def takePhotoWSQLData():
     currentid = scon.readFromDB(sqq.selectmaxidquery)
     query = sqq.selectLLSquery(currentid)
     LLS = scon.readFromDB(query)
-    if LLS is not None:
+    if LLS is not "None":
         
-        if LLS < 200:
+        if LLS <= 200:
             gp(autoisoCommand)
-            gp(dayshutterspeedCommand)
-        elif LLS > 200 and LLS < 400:
+            gp(d1div5000speedCommand)
+        elif LLS > 200 and LLS <= 640:
             gp(autoisoCommand)
-            gp(twilightshutterspeedCommand)
+            gp(1div100shutterspeedCommand)
+        elif LLS > 640 and LLS < 940:
+            gp(autoisoCommand)
+            gp(1shutterspeedCommand
         else:
-            gp(nightisoCommand)
-            gp(nightshutterspeedCommand)
+            gp(autoisoCommand)
+            gp(30shutterspeedCommand)
     
         captureImages()
         renameFiles(picID)
