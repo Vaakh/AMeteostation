@@ -174,6 +174,7 @@ void loop() {
   LLS = analogRead(LLSPort);
 
   RDS = analogRead(RDSPort);
+  
   data["Data_From_Arduino"] = 0;
   data["RTC_date"] = date;
   data["RTC_time"] = time;

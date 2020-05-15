@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{15E99248-6161-46A4-9183-609CA62406A6}</ProjectGuid>
+    <TargetFramework>net35</TargetFramework>
+    <AssemblyTitle>EDSDKLib</AssemblyTitle>
+    <Product>EDSDKLib</Product>
+    <Description>Canon SDK wrapper library</Description>
+    <Copyright>Copyright © Johannes Bildstein 2016</Copyright>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DocumentationFile>bin\$(Configuration)\EDSDKLib.xml</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,6 @@
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\EDSDKLib\bin\Debug\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\EDSDKLib\bin\Debug\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\EDSDKLib\obj\x86\Debug\EDSDKLib.csproj.CoreCompileInputs.cache
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\EDSDKLib\obj\x86\Debug\EDSDKLib.dll
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\EDSDKLib\obj\x86\Debug\EDSDKLib.pdb
+D:\Repos\GitHub\AMeteostation\ZIP Libraries\EDSDKLib-1.1.2\EDSDKLib-1.1.2\EDSDKLib\obj\x86\Debug\EDSDKLib.csprojAssemblyReference.cache
