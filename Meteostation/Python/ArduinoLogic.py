@@ -26,4 +26,4 @@ def processArData():
                                      prepdata["THO_h"], prepdata["TPO_t"], prepdata["TPO_p"], prepdata["WND_s"],
                                      prepdata["WND_o"], prepdata["LLS"], prepdata["RDS"], prepdata["IRS"])
         scon.writeToDB(query)
-    time.sleep(10)
+    

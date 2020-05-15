@@ -54,8 +54,11 @@ def buildInsertCamQuery(pathToPhoto, dataid):
 
 
 selectallquery: str = "SELECT * FROM `meteo_db`.`2020/5/13`;"
-selectmaxidqueryTEST: str = "SELECT MAX(`DataID`) FROM `meteo_db`.`2020/5/13`;"
 
-def selectIDquery(dataid):
-    query = "SELECT * FROM `meteo_db`.`2020/5/13` WHERE `DataID` = " + str(dataid) + ";"
+def selectMaxIDquery(date) 
+    msg = "SELECT MAX(`DataID`) FROM `meteo_db`.`" + str(date) + "`;"
+    return msg
+
+def selectIDDatequery(dataid, date):
+    query = "SELECT * FROM `meteo_db`.`" + str(date) + "` WHERE `DataID` = " + str(dataid) + ";"
     return query

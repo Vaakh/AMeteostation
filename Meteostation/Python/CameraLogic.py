@@ -52,6 +52,7 @@ def createSaveFolder():
 
 def captureImages():
     gp(triggerCommand)
+    #command send without waiting and need to wait shutterspeed value    
     sleep(40)
     gp(downloadCommand)
     sleep(3)
