@@ -7,6 +7,6 @@ from time import sleep
 while True:
     a.processArData()
     print("End Arduino")
-    sleep(10)
-    c.takePhotoWSQLDataTest()
+    #sleep(10)
+    c.takePhotoWSQLData()
     sleep(10)

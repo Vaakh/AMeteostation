@@ -23,8 +23,9 @@ def killgphoto2Process():
 
 shot_date = datetime.now().strftime("%Y-%m-%d")
 shot_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-picID = "PiShots"
+picID = "MeteoShots"
 
+saveinsdcardCommand = ["--set-config", "capturetarget=1"]
 clearCommand = ["--folder", "/store_00020001/DCIM/100CANON", \
                 "-R", "--delete-all-files"]
 triggerCommand = ["--trigger-capture"]
@@ -33,14 +34,14 @@ downloadCommand = ["--get-all-files"]
 autoisoCommand = ["--set-config-value", "/main/imgsettings/iso=Auto"]
 nightisoCommand = ["--set-config-value", "/main/imgsettings/iso=3200"]
 
-1div5000shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/5000"]
-1div100shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/100"]
-1shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1"]
-30shutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=30"]
+dayshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/5000"]
+sunsetshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1/100"]
+twilightshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=1"]
+nightshutterspeedCommand = ["--set-config-value", "/main/capturesettings/shutterspeed=30"]
 
 
 folder_name = shot_date + picID
-save_location = "/home/pi/Pictures/gphoto/images/" + folder_name
+save_location = "/home/pi/Pictures/meteophoto/" + folder_name
 
 def createSaveFolder():
     try:
@@ -51,44 +52,46 @@ def createSaveFolder():
 
 def captureImages():
     gp(triggerCommand)
-    sleep(3)
+    sleep(40)
     gp(downloadCommand)
-    #gp(clearCommand)
+    sleep(3)
+    gp(clearCommand)
 
 
 def renameFiles(ID):
     for filename in os.listdir("."):
         if len(filename) < 13:
             if filename.endswith(".JPG"):
-                os.rename(filename, (shot_time + ID + ".JPG"))
+                os.rename(filename, (datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ID + ".JPG"))
                 print("Renamed the JPG")
             elif filename.endswith(".CR2"):
-                os.rename(filename, (shot_time + ID + ".CR2"))
+                os.rename(filename, (datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ID + ".CR2"))
                 print("Renamed the CR2")
 
 def takePhotoWSQLData():
     killgphoto2Process()
-    #gp(clearCommand)
+    gp(saveinsdcardCommand)
+    gp(clearCommand)
     createSaveFolder()
 
     scon = sqc.SQLConnector()
     currentid = scon.readFromDB(sqq.selectmaxidquery)
     query = sqq.selectLLSquery(currentid)
     LLS = scon.readFromDB(query)
-    if LLS is not "None":
-        
-        if LLS <= 200:
+    if LLS is not None:
+        print("Current LLS: " + str(LLS))
+        if int(LLS) <= 200:
             gp(autoisoCommand)
-            gp(d1div5000speedCommand)
-        elif LLS > 200 and LLS <= 640:
+            gp(dayshutterspeedCommand)
+        elif int(LLS) > 200 and int(LLS) <= 640:
             gp(autoisoCommand)
-            gp(1div100shutterspeedCommand)
-        elif LLS > 640 and LLS < 940:
+            gp(sunsetshutterspeedCommand)
+        elif int(LLS) > 640 and int(LLS) < 940:
             gp(autoisoCommand)
-            gp(1shutterspeedCommand
+            gp(twilightshutterspeedCommand)
         else:
             gp(autoisoCommand)
-            gp(30shutterspeedCommand)
+            gp(nightshutterspeedCommand)
     
         captureImages()
         renameFiles(picID)
@@ -96,6 +99,7 @@ def takePhotoWSQLData():
         sqlpathtophoto = (save_location + shot_time + picID + ".JPG")
         query = sqq.buildInsertCamQuery(sqlpathtophoto, currentid)
         scon.writeToDB(query)
+        print("Camera end\n")
 
 def takePhotoWSQLDataTest():
     killgphoto2Process()
@@ -126,11 +130,11 @@ def takePhotoWSQLDataTest():
 
 def takeTestPhoto():
     killgphoto2Process()
-    #gp(clearCommand)
+    gp(clearCommand)
     gp(autoisoCommand)
     gp(twilightshutterspeedCommand)
     createSaveFolder()
     captureImages()
     renameFiles(picID)
 
-takeTestPhoto() 
+#takeTestPhoto() 

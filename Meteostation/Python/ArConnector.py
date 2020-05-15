@@ -1,5 +1,6 @@
 from SerialPorts import serial_ports, curr_speed
 import serial
+import serial.tools.list_ports
 
 class ArdConnector:
     def __init__(self):
@@ -8,11 +9,12 @@ class ArdConnector:
         self.port.append(serial_ports())
         self.speed.append(curr_speed)
         self.current_port = str(self.port[0]).replace('[', '').replace(']', '').replace('\'', '')
-        print(self.current_port)
+        self.port = self.current_port.split(',')
+        print(self.port[0])
 
     def connect(self):
         try:
-            self.current_port = serial.Serial(self.current_port, curr_speed)
+            self.current_port = serial.Serial(self.port[0], curr_speed)
             return True
         except Exception as e:
             print(e)
